@@ -51,7 +51,7 @@ public class World {
     public void read() throws IOException {
         int row, col, countOfLivingCells;
         String readLine;
-        BufferedReader fis = new BufferedReader(new FileReader("Graphical Interface\\in.txt"));
+        BufferedReader fis = new BufferedReader(new FileReader("_01\\Graphical Interface\\in.txt"));
         while ((readLine = fis.readLine()) != null) {
             //数组Nums表示读取的数据列表，从前到后依次为:
             //活细胞总数，所有活细胞坐标(0<=x,y<row,col)
