@@ -6,24 +6,23 @@ public class Cell {
     public Cell() {
         state = false;
     }
-
     public Cell(int x, int y) {
         this.state = false;
         this.x = x;
         this.y = y;
     }
 
-    public Cell(boolean state, int x, int y) {
+    public Cell(boolean state, int row, int col) {
         this.state = state;
-        this.x = x;
-        this.y = y;
+        this.x = row;
+        this.y = col;
     }
 
     /**
      * 获取
      * @return state
      */
-    public boolean isState() {
+    public boolean isLive() {
         return state;
     }
 
